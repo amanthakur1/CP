@@ -1,0 +1,6 @@
+*.bin
+*.out
+*.exe
+*/.cph
+/.cph
+*.json
