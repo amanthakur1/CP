@@ -1,4 +1,4 @@
-# DSA - 450
+# CP | Practices and Rounds
 ### Content:
 - Codeforces
     - Rounds
