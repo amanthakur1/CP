@@ -11,23 +11,16 @@ const int N     =   2e5+5;
 
 void solve(){
     // Write your code from here....
-    int a,b,k; cin>>a>>b>>k;
-    vector<int> va(k),vb(k);
-
-    for(auto &i:va) cin>>i;
-    for(auto &i:vb) cin>>i;
-
-    int fa[a+1]={0},fb[b+1]={0};
-    for(int i=0;i<k;i++){
-        fa[va[i]]++;
-        fb[vb[i]]++;
-    }
-
+    ll n; cin>>n;
+    map<ll,ll> m;
     ll ans=0;
-    for(int i=0;i<k;i++){
-        ans+= (k- fa[va[i]] - fb[vb[i]] + 1);
+    for(ll i=0;i<n;i++){
+        ll x; cin>>x;
+        m[x]++;
+        ans=max(ans,m[x]);
     }
-    cout<<ans/2 <<endl;
+
+    cout<<ans<<endl;
 
     return;
 }
